@@ -1,0 +1,27 @@
+.monitoring {
+    background: #FFFFFF;
+    border: solid;
+    flex-grow: 1;
+}
+
+.monitoring .head {
+    display: flex;
+    border-bottom: solid;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    background: #C4C4C4;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.monitoring .arrow2 {
+    transform: rotate(180deg);
+}
+
+.monitoring .content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}

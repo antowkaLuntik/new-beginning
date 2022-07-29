@@ -1,0 +1,27 @@
+.left {
+    display: flex;
+    background: #C4C4C4;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 350px;
+    padding: 15px 30px 15px 10px;
+    border: solid;
+}
+
+.left .block {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+
+.left .block div{
+    font-weight: bold;
+    font-size: 20px;
+    border: solid;
+    background: #B0D8EF;
+    flex-grow: 1;
+    text-align: center;
+    padding: 8px;
+}
