@@ -1,0 +1,35 @@
+.settings {
+    background: #FFFFFF;
+    border: solid;
+    flex-grow: 1;
+}
+
+.settings .head {
+    display: flex;
+    border-bottom: solid;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background: #C4C4C4;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.settings .content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    row-gap: 20px;
+    font-weight: bold;
+}
+
+.settings .content .settings__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings .content .settings__row input {
+    max-width: 50%;
+    flex-grow: 1;
+}

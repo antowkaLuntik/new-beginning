@@ -1,0 +1,57 @@
+.login {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.login .fields {
+    display: flex;
+    background: linear-gradient(133.62deg, #000000 -3.91%, #0D75F0 52.89%);
+    flex-direction: column;
+    row-gap: 20px;
+    flex-grow: 1;
+    max-width: 400px;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.login .fields .fieldLog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .fields .fieldPass {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .fields input {
+    align-self: center;
+    min-height: 20px;
+}
+
+.login .fields .btns {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 30px;
+    color: black;
+    text-align: center;
+}
+
+.login .fields .btns .btnLog {
+    border: solid;
+    flex-grow: 2;
+    background: #B0D8EF;
+}
+
+.login .fields .btns .btnExit {
+    border: solid;
+    flex-grow: 1;
+    background: #C4C4C4;
+}
