@@ -10,6 +10,7 @@ export default function Header() {
     // useEffect(() => {
     //     tick()
     // });
+    
 
     return(
         <div className="header">
