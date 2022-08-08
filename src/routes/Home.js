@@ -11,7 +11,7 @@ export default function Home() {
             <Header />
             <div className="wrapper">
                 <div className="leftBlock" id="leftBlock">
-                    <Left />
+                    <Left onChangeBlock={changeBlock}/>
                 </div>
                 <div className="mainBlock" id="mainBlock">
                     {block}

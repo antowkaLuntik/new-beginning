@@ -1,12 +1,28 @@
 import logo from "../image/logo.png";
 import avatar from "../image/avatar.png";
 import "../css/header.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
-    useEffect(() => {
-        tick()
-    });
+
+    const DateTime = () => {
+        const [dateTime, setDateTime] = useState(new Date());
+    
+        useEffect(() => {
+            const id = setInterval(() => setDateTime(new Date()), 1000);
+            return () => {
+                clearInterval(id);
+            }
+        }, []);
+
+        return (
+            <div>
+                <span>{`${dateTime.toLocaleTimeString()} / ${dateTime.toLocaleDateString()}`}</span>
+            </div>
+            
+        );
+    
+    }
     
     return(
         <div className="header">
@@ -38,7 +54,7 @@ export default function Header() {
                     </div>
 
                     <div className="time">
-                        {clock()}
+                        {DateTime()}
                     </div>
 
                     <div className="question">
@@ -60,23 +76,5 @@ export default function Header() {
             </div>
         </div>
     );
-
-    function tick() {
-        setInterval(clock,1000);
-    }
-
-    function clock() {
-        const time = new Date();
-        const date = new Date();
-        // console.log(time);
-
-        return(
-            <div>
-                <span>{time.toLocaleTimeString}</span>
-                <span> / </span>
-                <span>{date.toLocaleDateString}</span>
-            </div>
-        );
-    }
 }
 

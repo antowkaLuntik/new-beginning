@@ -4,12 +4,12 @@ import Monitoring from "./Monitoring";
 import changeBlock from "../routes/Home";
 import Settings from "./Settings";
 
-export default function Left() {
+export default function Left(props) {
     
     return(
         <div className="left">
             <div className="block"
-                onClick={() => changeBlock(<Monitoring />)}
+                onClick={() => props.onChangeBlock(<Monitoring />)}
             >
                 <img src={plus}
                         alt=""
@@ -45,7 +45,7 @@ export default function Left() {
                 <div>Карты</div>
             </div>
             <div className="block"
-                onClick={() => changeBlock(<Settings />)}
+                onClick={() => props.onChangeBlock(<Settings />)}
             >
                 <img src={plus}
                         alt=""
