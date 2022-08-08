@@ -1,17 +1,15 @@
 import plus from "../image/plus.png";
 import "../css/left.css";
 import Monitoring from "./Monitoring";
+import changeBlock from "../routes/Home";
 import Settings from "./Settings";
-import changeMainBlock from "../routes/Home";
-import { useEffect } from "react";
-import Home from "../routes/Home";
 
 export default function Left() {
     
     return(
         <div className="left">
             <div className="block"
-                onClick={() => <Home mainblock={<Monitoring />} />}
+                onClick={() => changeBlock(<Monitoring />)}
             >
                 <img src={plus}
                         alt=""
@@ -47,7 +45,7 @@ export default function Left() {
                 <div>Карты</div>
             </div>
             <div className="block"
-                onClick={() => <Home mainblock={<Monitoring />} />}
+                onClick={() => changeBlock(<Settings />)}
             >
                 <img src={plus}
                         alt=""

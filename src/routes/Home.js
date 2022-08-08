@@ -1,9 +1,11 @@
-import { useEffect, useState, useMemo } from "react";
+import { useState } from "react";
 import Header from "../components/Header";
 import Left from "../components/Left";
 import Monitoring from "../components/Monitoring";
 
-export default function Home(props) {
+export default function Home() {
+    let [block, changeBlock] = useState(<Monitoring />);
+
     return (
         <div className="home">
             <Header />
@@ -12,7 +14,7 @@ export default function Home(props) {
                     <Left />
                 </div>
                 <div className="mainBlock" id="mainBlock">
-                    {props.mainblock}
+                    {block}
                 </div>
             </div>
         </div>

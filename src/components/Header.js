@@ -4,14 +4,10 @@ import "../css/header.css";
 import { useEffect } from "react";
 
 export default function Header() {
-    const time = new Date();
-    const date = new Date();
-
-    // useEffect(() => {
-    //     tick()
-    // });
+    useEffect(() => {
+        tick()
+    });
     
-
     return(
         <div className="header">
             <div className="logo">
@@ -42,11 +38,7 @@ export default function Header() {
                     </div>
 
                     <div className="time">
-                        <div>
-                            <span>{time.toLocaleTimeString}</span>
-                            <span> / </span>
-                            <span>{date.toLocaleDateString}</span>
-                        </div>
+                        {clock()}
                     </div>
 
                     <div className="question">
@@ -69,8 +61,22 @@ export default function Header() {
         </div>
     );
 
-    // function tick() {
-    //     setInterval(Clock,1000);
-    // }
+    function tick() {
+        setInterval(clock,1000);
+    }
+
+    function clock() {
+        const time = new Date();
+        const date = new Date();
+        // console.log(time);
+
+        return(
+            <div>
+                <span>{time.toLocaleTimeString}</span>
+                <span> / </span>
+                <span>{date.toLocaleDateString}</span>
+            </div>
+        );
+    }
 }
 

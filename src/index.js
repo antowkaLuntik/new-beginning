@@ -9,13 +9,12 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import Monitoring from './components/Monitoring';
 
 ReactDOM.render((
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<Login />} />
-            <Route path="home" element={<Home mainblock={<Monitoring />} />} />
+            <Route path="home" element={<Home />} />
             <Route path="login" element={<Login />} />
         </Routes>
     </BrowserRouter>
