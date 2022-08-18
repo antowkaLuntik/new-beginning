@@ -1,7 +1,5 @@
 import plus from "../image/plus.png";
 import "../css/left.css";
-import Monitoring from "./Monitoring";
-import Settings from "./Settings";
 
 export default function Left(props) {
     const leftBlockName = ["Мониторинг", "Проблемы", "Погодные условия", "Карты", "Настройки", "Анализ данных"];
@@ -18,7 +16,7 @@ export default function Left(props) {
 
     leftBlocks[0] = (
         <div className="block"
-            onClick={() => props.onChangeBlock(<Monitoring />)}
+            onClick={() => props.onChangeBlock("monitoring")}
         >
             <img src={plus}
                     alt=""
@@ -31,7 +29,7 @@ export default function Left(props) {
 
     leftBlocks[4] = (
         <div className="block"
-            onClick={() => props.onChangeBlock(<Settings />)}
+            onClick={() => props.onChangeBlock("settings")}
         >
             <img src={plus}
                     alt=""
