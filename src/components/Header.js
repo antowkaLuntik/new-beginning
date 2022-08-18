@@ -2,6 +2,7 @@ import logo from "../image/logo.png";
 import avatar from "../image/avatar.png";
 import "../css/header.css";
 import { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 
 export default function Header() {
 
@@ -70,7 +71,7 @@ export default function Header() {
                     </div>
 
                     <div className="exit">
-                        Выход
+                        <Link to="/login">Выход</Link>
                     </div>
                 </div>
             </div>
