@@ -9,9 +9,9 @@ export default function Header() {
         const [dateTime, setDateTime] = useState(new Date());
     
         useEffect(() => {
-            const id = setInterval(() => setDateTime(new Date()), 1000);
+            const timer = setInterval(() => setDateTime(new Date()), 1000);
             return () => {
-                clearInterval(id);
+                clearInterval(timer);
             }
         }, []);
 
