@@ -55,3 +55,12 @@
   flex-grow: 1;
   background: #c4c4c4;
 }
+
+.login a {
+  color: black;
+  text-decoration: none;
+}
+
+.login a:hover {
+  opacity: 50%;
+}
