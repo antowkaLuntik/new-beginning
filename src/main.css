@@ -1,34 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 body {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(217.65deg, #1A4578 21.77%, rgba(5, 60, 124, 0) 75.38%);
-    color: #1f282c;
-    font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    217.65deg,
+    #1a4578 21.77%,
+    rgba(5, 60, 124, 0) 75.38%
+  );
+  color: #1f282c;
+  font-family: "Open Sans", sans-serif;
 }
 
 .wrapper {
-    display: flex;
-    margin: 0 30px;
-    column-gap: 20px;
-    flex-grow: 1;
+  display: flex;
+  margin: 0 30px;
+  column-gap: 20px;
+  flex-grow: 1;
 }
 
 .wrapper .leftBlock {
-    display: flex;
-    width: 30%;
+  display: flex;
+  width: 30%;
 }
 
 .wrapper .mainBlock {
-    display: flex;
-    width: 70%;
+  display: flex;
+  width: 70%;
 }
-
-
-
-
-

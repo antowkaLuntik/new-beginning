@@ -5,7 +5,7 @@ import "../css/monitoring.css";
 import React from "react";
 import { useState } from "react";
 
-export default function Monitoring() {
+export default function Monitoring() { 
     let [value, valueChange] = useState(graph1);
 
     return(
