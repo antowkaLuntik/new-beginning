@@ -35,7 +35,7 @@ export default function Header() {
             <div className="btn">Поиск</div>
           </div>
 
-          <div className="language">RU | EN</div>
+          <div className="language">RU / EN</div>
         </div>
 
         <div className="row2">
