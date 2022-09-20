@@ -30,7 +30,7 @@ const searchElement: any = [
   </div>,
 ];
 
-const elements: any = {
+const elements = {
   logo: <img src={logo} alt="" height={130} width={130} />,
   search: searchElement,
   language: "RU / EN",
