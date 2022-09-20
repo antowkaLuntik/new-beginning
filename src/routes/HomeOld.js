@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Header from "../components/Header";
-import Left from "../components/Left";
-import Monitoring from "../components/Monitoring";
-import Settings from "../components/Settings";
+import Header from "../components/HeaderOld";
+import Left from "../components/LeftOld";
+import Monitoring from "../components/MonitoringOld";
+import Settings from "../components/SettingsOld";
 
 export default function Home() {
   let [block, changeBlock] = useState("monitoring");
